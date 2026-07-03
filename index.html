@@ -68,6 +68,10 @@
               <a href="#testimonials" class="nav-link">Testimonials</a>
             </li>
 
+            <li>
+              <a href="#contact" class="nav-link">Contact</a>
+            </li>
+
           </ul>
 
           <div class="navbar-btn-group">
@@ -200,12 +204,12 @@
 
           <div class="btn-group">
 
-            <button class="btn btn-primary btn-icon">
+            <button class="btn btn-primary btn-icon" data-scroll-target="menu">
               <img src="./assets/images/menu.svg" alt="menu icon">
               Our menu
             </button>
 
-            <button class="btn btn-secondary btn-icon">
+            <button class="btn btn-secondary btn-icon" data-scroll-target="about">
               <img src="./assets/images/arrow.svg" alt="menu icon">
               About us
             </button>
@@ -614,7 +618,7 @@
 
         </div>
 
-        <button class="btn btn-primary btn-icon">
+        <button class="btn btn-primary btn-icon" data-scroll-target="menu">
           <img src="./assets/images/menu.svg" alt="menu icon">
           Full menu
         </button>
@@ -716,35 +720,73 @@
       - #FOOTER
     -->
 
-    <footer>
+    <footer id="contact">
 
       <div class="footer-wrapper">
 
-        <a href="#">
-          <img src="./assets/images/logo-footer.svg" alt="logo" class="footer-brand" width="130">
-        </a>
+        <div class="footer-main">
 
-        <div class="social-link">
+          <div class="footer-brand-block">
+            <a href="#home">
+              <img src="./assets/images/logo-footer.svg" alt="logo" class="footer-brand" width="130">
+            </a>
 
-          <a href="#">
-            <ion-icon name="logo-twitter"></ion-icon>
-          </a>
+            <p class="footer-text">
+              Fresh plates, warm service, and a menu built for quick cravings or long dinners with friends.
+            </p>
+          </div>
 
-          <a href="#">
-            <ion-icon name="logo-instagram"></ion-icon>
-          </a>
+          <div class="footer-links-block">
+            <h4 class="footer-title">Quick links</h4>
 
-          <a href="#">
-            <ion-icon name="logo-facebook"></ion-icon>
-          </a>
+            <div class="footer-links">
+              <a href="#home">Home</a>
+              <a href="#about">About</a>
+              <a href="#services">Services</a>
+              <a href="#menu">Menu</a>
+              <a href="#testimonials">Testimonials</a>
+              <a href="#contact">Contact</a>
+            </div>
+          </div>
 
-          <a href="#">
-            <ion-icon name="logo-youtube"></ion-icon>
-          </a>
+          <div class="footer-contact-block">
+            <h4 class="footer-title">Visit or order</h4>
+
+            <p>123 Flavor Street, Downtown District</p>
+            <a href="tel:+18005550199">+1 (800) 555-0199</a>
+            <a href="mailto:hello@foodhub.com">hello@foodhub.com</a>
+            <p>Open daily: 10:00 AM - 11:00 PM</p>
+          </div>
 
         </div>
 
-        <p class="copyright">&copy; Copyright 2022 codewithsadee. All Rights Reserved.</p>
+        <div class="footer-bar">
+
+          <div class="social-link">
+
+            <a href="#" aria-label="Twitter">
+              <ion-icon name="logo-twitter"></ion-icon>
+            </a>
+
+            <a href="#" aria-label="Instagram">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+
+            <a href="#" aria-label="Facebook">
+              <ion-icon name="logo-facebook"></ion-icon>
+            </a>
+
+            <a href="#" aria-label="YouTube">
+              <ion-icon name="logo-youtube"></ion-icon>
+            </a>
+
+          </div>
+
+          <p class="copyright">&copy; <span class="js-current-year"></span> Foodhub. Crafted for fast ordering, easy discovery, and memorable meals.</p>
+
+          <a href="#home" class="footer-top-link">Back to top</a>
+
+        </div>
 
       </div>
 

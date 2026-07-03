@@ -220,6 +220,8 @@ html {
   transition: 0.25s ease;
 }
 
+.nav-link.active { color: var(--saffron); }
+
 .nav-link:hover { color: var(--saffron); }
 
 .navbar-btn-group {
@@ -848,8 +850,68 @@ footer {
 .footer-wrapper {
   display:        flex;
   flex-direction: column;
-  align-items:    center;
+  align-items:    stretch;
+  gap: 40px;
+}
+
+.footer-main {
+  display: grid;
   gap: 30px;
+}
+
+.footer-brand-block,
+.footer-links-block,
+.footer-contact-block {
+  display: grid;
+  gap: 15px;
+}
+
+.footer-text {
+  max-width: 360px;
+  color: var(--rhythm);
+  font-size: var(--fs-4);
+  line-height: 1.6;
+}
+
+.footer-title {
+  color: var(--white);
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.footer-links {
+  display: grid;
+  gap: 12px;
+}
+
+.footer-links a,
+.footer-contact-block a,
+.footer-contact-block p,
+.footer-top-link {
+  color: var(--rhythm);
+  font-size: var(--fs-5);
+  line-height: 1.6;
+  transition: 0.25s ease;
+}
+
+.footer-links a:hover,
+.footer-contact-block a:hover,
+.footer-top-link:hover {
+  color: var(--saffron);
+}
+
+.footer-bar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  padding-top: 25px;
+  border-top: 1px solid hsla(0, 0%, 100%, 0.08);
+}
+
+.footer-top-link {
+  color: var(--saffron);
+  font-weight: 500;
 }
 
 .social-link {

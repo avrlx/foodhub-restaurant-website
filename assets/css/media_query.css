@@ -354,6 +354,15 @@
    */
 
   .footer-wrapper {
+    align-items: stretch;
+  }
+
+  .footer-main {
+    grid-template-columns: 1.2fr 1fr 1fr;
+    gap: 50px;
+  }
+
+  .footer-bar {
     flex-direction: row;
     justify-content: space-between;
   }
